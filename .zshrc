@@ -68,6 +68,12 @@ recsim() {
     xcrun simctl io booted recordVideo "$1"
 }
 
+togif() {
+    echo -n "Use CTRL+C to stop convert to gif"
+    ffmpeg -i "$1" -r 15 "${1%.*}.gif"
+    echo "\n\n Result: $(($(stat -f%z ${1%.*}.gif) / 1024 / 1024))MB"
+}
+
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"                   # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion" # This loads nvm bash_completion
