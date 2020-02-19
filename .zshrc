@@ -6,14 +6,6 @@ source ${HOME}/.zplug/init.zsh
 source /usr/local/share/chruby/chruby.sh
 source /usr/local/share/chruby/auto.sh
 
-export PATH=$HOME/flutter/bin:$PATH
-export GOPATH=$HOME/go
-export PATH=$GOPATH/bin:$PATH
-
-eval "$(pyenv init -)"
-eval "$(rbenv init -)"
-eval "$(starship init zsh)"
-
 zplug 'zsh-users/zsh-syntax-highlighting'
 zplug 'zsh-users/zsh-autosuggestions'
 
@@ -54,14 +46,8 @@ setopt hist_expand            # 補完時にヒストリを自動的に展開す
 setopt inc_append_history     # 履歴をインクリメンタルに追加
 
 # --------------
-# propmt
+# commands
 # --------------
-POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(dir vcs)
-POWERLEVEL9K_DIR_HOME_BACKGROUND='yellow'
-POWERLEVEL9K_DIR_DEFAULT_BACKGROUND='yellow'
-POWERLEVEL9K_DIR_HOME_SUBFOLDER_BACKGROUND='black'
-POWERLEVEL9K_DIR_HOME_SUBFOLDER_FOREGROUND='white'export PATH="/usr/local/sbin:$PATH"
-
 ## Starts recording the simulator.
 recsim() {
     echo -n "Use CTRL+C to stop recording"
@@ -73,7 +59,3 @@ togif() {
     ffmpeg -i "$1" -r 15 "${1%.*}.gif"
     echo "\n\n Result: $(($(stat -f%z ${1%.*}.gif) / 1024 / 1024))MB"
 }
-
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"                   # This loads nvm
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion" # This loads nvm bash_completion

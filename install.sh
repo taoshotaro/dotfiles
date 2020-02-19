@@ -2,12 +2,12 @@
 
 # Setup
 ln -sf ~/dotfiles/.Brewfile ~/.Brewfile
-ln -sf ~/dotfiles/.zshenv ~/.zshenv
+ln -sf ~/dotfiles/.zprofile ~/.zprofile
 ln -sf ~/dotfiles/.zshrc ~/.zshrc
 ln -sf ~/dotfiles/.gitconfig ~/.gitconfig
 ln -sf ~/dotfiles/.gitignore ~/.gitignore
 
-# xcode-select --install
+xcode-select --install
 
 # Homebrew
 if !(type "brew" > /dev/null 2>&1); then
