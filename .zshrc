@@ -3,8 +3,6 @@ if [ ! -e "${HOME}/.zplug/init.zsh" ]; then
 fi
 
 source ${HOME}/.zplug/init.zsh
-source /usr/local/share/chruby/chruby.sh
-source /usr/local/share/chruby/auto.sh
 
 zplug 'zsh-users/zsh-syntax-highlighting'
 zplug 'zsh-users/zsh-autosuggestions'
