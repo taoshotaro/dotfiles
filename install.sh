@@ -1,11 +1,13 @@
 #!/bin/sh
 
+cd `dirname $0`
+
 # Setup
-ln -sf ~/dotfiles/.Brewfile ~/.Brewfile
-ln -sf ~/dotfiles/.zprofile ~/.zprofile
-ln -sf ~/dotfiles/.zshrc ~/.zshrc
-ln -sf ~/dotfiles/.gitconfig ~/.gitconfig
-ln -sf ~/dotfiles/.gitignore ~/.gitignore
+ln -sf `pwd`/.Brewfile ~/.Brewfile
+ln -sf `pwd`/.zprofile ~/.zprofile
+ln -sf `pwd`/.zshrc ~/.zshrc
+ln -sf `pwd`/.gitconfig ~/.gitconfig
+ln -sf `pwd`/.gitignore ~/.gitignore
 
 xcode-select --install
 
@@ -17,5 +19,5 @@ brew bundle --global
 
 # nvm
 if !(type "nvm" > /dev/null 2>&1); then
-    curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.34.0/install.sh | bash
+    curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.36.0/install.sh | bash
 fi
