@@ -20,8 +20,24 @@ brew "direnv"
 brew "ruby-install"
 brew "wget"
 brew "xcodegen"
+brew "ffmpeg"
 
+# 'brew cask install'
 cask "iterm2"
 cask "visual-studio-code"
 cask "hammerspoon"
 cask "dozer"
+cask "google-chrome"
+cask "1password"
+cask "cleanshot"
+cask "swish"
+cask "alfred"
+cask "discord"
+cask "figma"
+cask "transmission"
+
+mas "Caffeinated", id: 1362171212
+mas "Dropover", id: 1355679052
+mas "FreeMan", id: 510934532
+mas "Line", id: 539883307
+mas "Spark", id: 1176895641
