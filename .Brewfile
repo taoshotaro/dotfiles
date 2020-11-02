@@ -21,6 +21,7 @@ brew "ruby-install"
 brew "wget"
 brew "xcodegen"
 brew "ffmpeg"
+brew "imagemagick"
 
 # 'brew cask install'
 cask "iterm2"

@@ -4,7 +4,7 @@ export PATH=$GOPATH/bin:$PATH
 export NVM_DIR="$HOME/.nvm"
 export PATH="$PATH:$HOME/Git/flutter/bin"
 export PATH=$HOME/.nodebrew/current/bin:$PATH
-export ANDROID_HOME="/Users/taoshotaro/Library/Android/sdk"
+export ANDROID_HOME="$HOME/Library/Android/sdk"
 export PATH="/usr/local/sbin:$PATH"
 
 eval "$(pyenv init -)"
