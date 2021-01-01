@@ -9,7 +9,7 @@ ln -sf `pwd`/.zshrc ~/.zshrc
 ln -sf `pwd`/.gitconfig ~/.gitconfig
 ln -sf `pwd`/.gitignore ~/.gitignore
 
-xcode-select --install
+#xcode-select --install
 
 # Homebrew
 if !(type "brew" > /dev/null 2>&1); then

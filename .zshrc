@@ -3,8 +3,9 @@ if [ ! -e "${HOME}/.zplug/init.zsh" ]; then
 fi
 
 source ${HOME}/.zplug/init.zsh
-source /usr/local/share/chruby/chruby.sh
-source /usr/local/share/chruby/auto.sh
+source ${HOMEBREW_PREFIX}/share/chruby/chruby.sh
+source ${HOMEBREW_PREFIX}/share/chruby/auto.sh
+chruby ruby-3.0.0
 
 zplug 'zsh-users/zsh-syntax-highlighting'
 zplug 'zsh-users/zsh-autosuggestions'
