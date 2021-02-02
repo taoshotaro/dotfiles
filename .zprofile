@@ -6,6 +6,7 @@ export PATH="$PATH:$HOME/Git/flutter/bin"
 export PATH=$HOME/.nodebrew/current/bin:$PATH
 export ANDROID_HOME="$HOME/Library/Android/sdk"
 export PATH="/usr/local/sbin:$PATH"
+export RUBYOPT='-W0'
 
 eval "$(pyenv init -)"
 export RUBYOPT=-W0
