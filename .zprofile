@@ -1,11 +1,14 @@
-export PATH=$HOME/flutter/bin:$PATH
 export GOPATH=$HOME/go
-export PATH=$GOPATH/bin:$PATH
 export NVM_DIR="$HOME/.nvm"
-export PATH="$PATH:$HOME/Git/flutter/bin"
-export PATH=$HOME/.nodebrew/current/bin:$PATH
 export ANDROID_HOME="$HOME/Library/Android/sdk"
-export PATH="/usr/local/sbin:$PATH"
+export PATH=$GOPATH/bin:$PATH
+export PATH=$HOME/fvm/default/bin:$PATH
+export PATH=$HOME/.pub-cache/bin:$PATH
+export PATH=$HOME/.nodebrew/current/bin:$PATH
+export PATH=/usr/local/sbin:$PATH
+export PATH=$ANDROID_HOME/cmdline-tools/latest/bin:$PATH
+export PATH=/Users/taoshotaro/Library/"Application Support"/JetBrains/Toolbox/apps/AndroidStudio/ch-0/202.7351085/"Android Studio.app"/Contents/jre/jdk/Contents/Home/bin:$PATH
+export JAVA_HOME=/Users/taoshotaro/Library/"Application Support"/JetBrains/Toolbox/apps/AndroidStudio/ch-0/202.7351085/"Android Studio.app"/Contents/jre/jdk/Contents/Home
 export RUBYOPT='-W0'
 
 eval "$(pyenv init -)"

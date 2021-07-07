@@ -60,3 +60,9 @@ togif() {
     ffmpeg -i "$1" -r 15 "${1%.*}.gif"
     echo "\n\n Result: $(($(stat -f%z ${1%.*}.gif) / 1024 / 1024))MB"
 }
+
+# The next line updates PATH for the Google Cloud SDK.
+if [ -f '/Users/taoshotaro/Downloads/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/taoshotaro/Downloads/google-cloud-sdk/path.zsh.inc'; fi
+
+# The next line enables shell command completion for gcloud.
+if [ -f '/Users/taoshotaro/Downloads/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/taoshotaro/Downloads/google-cloud-sdk/completion.zsh.inc'; fi
