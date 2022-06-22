@@ -1,6 +1,6 @@
 [user]
-	name = taoshotaro
-	email = tao@shotr.me
+	name = Shotaro Tao
+	email = r@shotr.me
 [core]
 	excludesfile = ~/.gitignore
 	editor = nano
