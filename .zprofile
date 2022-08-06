@@ -16,6 +16,9 @@ export PATH=$PATH:"$HOME/Git/flutter/bin"
 export SSH_AUTH_SOCK=/Users/taoshotaro/Library/Containers/com.maxgoedjen.Secretive.SecretAgent/Data/socket.ssh
 export PATH="$PATH:/Users/taoshotaro/.local/bin"
 
+export PATH=$PATH:/Applications/"Android Studio.app"/Contents/jre/Contents/Home/bin
+export JAVA_HOME=/Applications/"Android Studio.app"/Contents/jre/Contents/Home
+
 eval "$(/opt/homebrew/bin/brew shellenv)"
 eval "$(pyenv init -)"
 eval "$(starship init zsh)"
